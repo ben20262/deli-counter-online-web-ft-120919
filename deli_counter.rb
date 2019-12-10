@@ -5,7 +5,8 @@ def line (array)
   else
     counter = 1
     array.each do |name|
-      words = words + " #{counter} #{name}"
+      words = words + " #{counter}. #{name}"
+      counter += 1
     end
     puts words
   end
